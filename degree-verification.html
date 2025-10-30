@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Degree Verification | Avantika University</title>
+
+  <!-- Use same Google Fonts as site -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/Images/favicon.ico" type="image/png">
+</head>
+<body>
+  <!-- Header (keeps same structure as the site so it blends) -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="/" class="brand"><img src="assets/Images/logo.svg" type="logo/svg" alt="Avantika University" class="brand-logo"></a>
+      <nav class="main-nav">
+        <a href="/about-avantika.php">About</a>
+        <a href="/academics.php">Academics</a>
+        <a href="/campus.php">Campus</a>
+        <a href="/admissions.php">Admissions</a>
+        <a href="/contact.php">Contact</a>
+      </nav>
+      <a class="apply-btn" href="/apply.php">Apply Now</a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- The section replaces the "page not available" area, matching spacing and style -->
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="wrap">
+        <h1 class="page-title">Degree Verification</h1>
+        <p class="page-sub">Verify the authenticity of a student's degree issued by Avantika University.</p>
+      </div>
+    </section>
+
+    <section class="verification-section">
+      <div class="wrap verification-wrap">
+        <div class="verify-card">
+          <form id="verifyForm" class="verify-form" autocomplete="off">
+            <label for="studentID">Registration ID / Student ID</label>
+            <input id="studentID" name="studentID" type="text" placeholder="e.g., AU2021001" required>
+            <button type="submit" id="verifyBtn">Verify</button>
+          </form>
+
+          <div id="result" class="result" aria-live="polite" hidden></div>
+
+          <p class="helper-note">Note: For any queries, Contact 💬 info@avantika.edu.in</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keep the Admissions section placeholder (so page flow matches screenshot) -->
+    <section class="admissions-placeholder">
+      <div class="wrap">
+        <h2>Admissions 2025</h2>
+        <p>Education for the Next Generation to Build a Better World !!</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (simple to match site) -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>© <span id="year"></span> Copyright 2025. Avantika University, Ujjain, MP
+</div>
+      <div class="small">Registered & Accredited</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/verify.js"></script>
+</body>
+</html>
