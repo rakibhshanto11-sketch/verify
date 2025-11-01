@@ -91,5 +91,4 @@ form.addEventListener('submit', async function(e){
     console.error(err);
     showInfo('error', '⚠️ Error fetching verification data. If this persists, consider using a server-side proxy to load the CSV.');
   }
-  clearBtn.addEventListener('click', ()=>{ document.getElementById('studentId').value = ''; document.getElementById('result').innerHTML=''; })
 });
